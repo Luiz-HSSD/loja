@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Modelos
+using Modelos;
+namespace BLL.Strategy
 {
-    public class ClienteInformation:Pessoa
+    interface IStrategy
     {
-
+        string Processar(EntidadePersistente entidade);
     }
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Modelos
+namespace BLL.Strategy
 {
-    public class ClienteInformation:Pessoa
+    class ValidadorNome
     {
-
     }
 }

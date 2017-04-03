@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    public class EntidadePersistente
+    public class EntidadePersistente:IEntidade
     {
         private int codigo;
 

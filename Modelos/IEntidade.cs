@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    public class ClienteInformation:Pessoa
+    public interface IEntidade
     {
-
     }
 }

@@ -118,6 +118,7 @@
             this.incluirButton.TabIndex = 8;
             this.incluirButton.Text = "Incluir";
             this.incluirButton.UseVisualStyleBackColor = true;
+            this.incluirButton.Click += new System.EventHandler(this.incluirButton_Click);
             // 
             // alterarButton
             // 
@@ -127,6 +128,7 @@
             this.alterarButton.TabIndex = 9;
             this.alterarButton.Text = "Alterar";
             this.alterarButton.UseVisualStyleBackColor = true;
+            this.alterarButton.Click += new System.EventHandler(this.alterarButton_Click);
             // 
             // limparButton
             // 
@@ -136,6 +138,7 @@
             this.limparButton.TabIndex = 10;
             this.limparButton.Text = "Limpar";
             this.limparButton.UseVisualStyleBackColor = true;
+            this.limparButton.Click += new System.EventHandler(this.limparButton_Click);
             // 
             // excluirButton
             // 
@@ -145,6 +148,7 @@
             this.excluirButton.TabIndex = 11;
             this.excluirButton.Text = "Excluir";
             this.excluirButton.UseVisualStyleBackColor = true;
+            this.excluirButton.Click += new System.EventHandler(this.excluirButton_Click);
             // 
             // lerButton
             // 
@@ -155,17 +159,20 @@
             this.lerButton.TabIndex = 12;
             this.lerButton.Text = "Ler";
             this.lerButton.UseVisualStyleBackColor = true;
+            this.lerButton.Click += new System.EventHandler(this.lerButton_Click);
             // 
             // clientesDataGridView
             // 
             this.clientesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.clientesDataGridView.CausesValidation = false;
             this.clientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clientesDataGridView.Location = new System.Drawing.Point(24, 208);
             this.clientesDataGridView.Name = "clientesDataGridView";
             this.clientesDataGridView.Size = new System.Drawing.Size(408, 233);
             this.clientesDataGridView.TabIndex = 13;
+            this.clientesDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clientesDataGridView_CellClick);
             // 
             // ClientesForm
             // 
@@ -188,6 +195,7 @@
             this.Controls.Add(this.codigoLabel);
             this.Name = "ClientesForm";
             this.Text = "ClientesForm";
+            this.Load += new System.EventHandler(this.ClientesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clientesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
