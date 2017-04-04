@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DAL;
 using Modelos;
 using System.Collections;
+using System.Data;
 
 namespace BLL
 {
@@ -14,7 +15,7 @@ namespace BLL
         public ProdutosBLL() : base(new ProdutosDAL())
         {
         }
-        public ArrayList ProdutosEmFalta()
+        public DataTable ProdutosEmFalta()
         {
             ProdutosDAL produtos = (ProdutosDAL)idal;
             return produtos.ProdutosEmFalta();

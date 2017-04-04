@@ -16,25 +16,12 @@ namespace DAL
         {
         }
 
-        public ArrayList ProdutosEmFalta()
+        public DataTable ProdutosEmFalta()
         {
-            SqlConnection cn = new SqlConnection(Dados.StringDeConexao);
-            SqlCommand cmd = new SqlCommand("Select * from Produtos Where Estoque < 10", cn);
-            cn.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
-            ArrayList lista = new ArrayList();
-            while (dr.Read())
-            {
-                ProdutoInformation produto = new ProdutoInformation();
-                produto.Codigo = Convert.ToInt32(dr["codigo"]);
-                produto.Nome = dr["nome"].ToString();
-                produto.Estoque = Convert.ToInt32(dr["estoque"]);
-                produto.Preco = Convert.ToDecimal(dr["preco"]);
-                lista.Add(produto);
-            }
-            dr.Close();
-            cn.Close();
-            return lista;
+            DataTable tabela=new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select codigo, nome from produtos where estoque=0",Dados.StringDeConexao);
+            da.Fill(tabela);
+            return tabela;
         }
         public override void Incluir(EntidadePersistente entidade)
         {

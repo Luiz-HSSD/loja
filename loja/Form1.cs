@@ -19,7 +19,9 @@ namespace Loja
 
         private void produtosEmFaltaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ProdutosEmFaltaForm obj = new ProdutosEmFaltaForm();
+            obj.MdiParent = this;
+            obj.Show();
         }
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -29,6 +31,20 @@ namespace Loja
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ClientesForm obj = new ClientesForm();
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProdutosForm obj = new ProdutosForm();
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VendasForm obj = new VendasForm();
             obj.MdiParent = this;
             obj.Show();
         }

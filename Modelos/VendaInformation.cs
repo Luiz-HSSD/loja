@@ -38,5 +38,10 @@ namespace Modelos
             get { return _produto; }
             set { _produto = value; }
         }
+        public VendaInformation()
+        {
+            Produto = new ProdutoInformation();
+            Cliente = new ClienteInformation();
+        }
     }
 }
