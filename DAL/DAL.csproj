@@ -52,13 +52,13 @@
     <Compile Include="VendasDAL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Loja.sql" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Modelos\Modelos.csproj">
       <Project>{8eb6e6b8-6dcb-4444-aa1f-3679555750ab}</Project>
       <Name>Modelos</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Loja.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

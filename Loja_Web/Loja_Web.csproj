@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Clientes.aspx" />
+    <None Include="menu.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -74,10 +76,48 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="produtos.aspx" />
+    <Content Include="ProdutosEmFalta.aspx" />
+    <Content Include="Vendas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="produtos.aspx.cs">
+      <DependentUpon>produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="produtos.aspx.designer.cs">
+      <DependentUpon>produtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutosEmFalta.aspx.cs">
+      <DependentUpon>ProdutosEmFalta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProdutosEmFalta.aspx.designer.cs">
+      <DependentUpon>ProdutosEmFalta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>menu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>menu.master</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas.aspx.cs">
+      <DependentUpon>Vendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vendas.aspx.designer.cs">
+      <DependentUpon>Vendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
