@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="~/loja.ico" rel="shortcut icon" type="image/x-icon" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -12,6 +13,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <a href="Clientes.aspx">CLIENTES</a>
+            <a href="Produtos.aspx">PRODUTOS</a>
+            <a href="ProdutosEmFalta.aspx">PRODUTOS EM FALTA</a>
+            <a href="Vendas.aspx">VENDAS</a>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

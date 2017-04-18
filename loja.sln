@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja", "loja\Loja.csproj", "{4BDFC72C-98A8-4A86-A8DB-AFE5E98F7C6F}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{8EB6E6B8-6DCB-4444-AA1F-3679555750AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja_Web", "Loja_Web\Loja_Web.csproj", "{57B2CA21-8975-4CE3-BEF1-C87AE4EB4C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMatador", "WebMatador\WebMatador.csproj", "{AA3C3FD9-3181-45FA-90FF-C3E2D1BD824F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +42,10 @@ Global
 		{57B2CA21-8975-4CE3-BEF1-C87AE4EB4C71}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{57B2CA21-8975-4CE3-BEF1-C87AE4EB4C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B2CA21-8975-4CE3-BEF1-C87AE4EB4C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3C3FD9-3181-45FA-90FF-C3E2D1BD824F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3C3FD9-3181-45FA-90FF-C3E2D1BD824F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3C3FD9-3181-45FA-90FF-C3E2D1BD824F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3C3FD9-3181-45FA-90FF-C3E2D1BD824F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
